@@ -107,7 +107,7 @@ module.exports = {
                 minifyJS: true
             },
             chunks: ['manifest', 'vendor', 'main'],
-            // favicon: src('favicon.ico'),
+            favicon: resolve('favicon.ico'),
             chunksSortMode: 'dependency'
         }),
         isDev ? new webpack.HotModuleReplacementPlugin() : new webpack.HashedModuleIdsPlugin(),
