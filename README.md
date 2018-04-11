@@ -42,7 +42,8 @@ react + redux + webpack + antd
 ├── package.json 
 ├── src     --  项目源码
 │   ├── assets      --  图片，字体和其他静态资源
-│   │   ├── favicon.ico
+│   │   ├── iconfont 
+│   │   └── images
 │   ├── components  --  react组件
 │   ├── actions 
 │   ├── reducers 
@@ -53,6 +54,7 @@ react + redux + webpack + antd
 │   ├── router.js       --  路由
 │   ├── index.html
 │   └── main.js       --  js入口文件
+├── favicon.ico       
 ├── server.js        --  项目启动入口
 ├── postcss.config.js    -- antd 配置文件
 ├── .babelrc         -- jsx语法转译/。。。配置

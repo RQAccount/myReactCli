@@ -1,11 +1,13 @@
 import { bindActionCreators } from 'redux';
-import { loadData } from 'actions/test';
+import { loadData, changeMessage } from 'actions/test';
 
 export default {
     mapStateToProps: state => ({
-
+        list: state.test.list,
+        xxx: state.test.xxx,
     }),
     mapDispatchToProps: dispatch => ({
-        data: bindActionCreators(loadData, dispatch),
+        loadData: bindActionCreators(loadData, dispatch),
+        changeMessage: bindActionCreators(changeMessage, dispatch),
     })
 };

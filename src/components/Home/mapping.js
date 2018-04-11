@@ -6,6 +6,6 @@ export default {
 
     }),
     mapDispatchToProps: dispatch => ({
-        data: bindActionCreators(loadData, dispatch),
+        loadData: bindActionCreators(loadData, dispatch),
     })
 };

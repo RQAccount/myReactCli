@@ -118,6 +118,7 @@ module.exports = {
             components: src('components'),
             actions: src('actions'),
             assets: src('assets'),
+            network: src('network'),
             utils: src('utils')
         },
         extensions: ['*', '.js', '.jsx']

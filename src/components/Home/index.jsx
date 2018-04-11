@@ -12,7 +12,10 @@ export default class Home extends React.Comment {
 
     render() {
         return (
-            <Test />
+            <div>
+                <Test />
+                <Test />
+            </div>
         );
     }
 }
