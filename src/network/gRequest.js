@@ -86,10 +86,8 @@ function interceptors(config, axiosInstance) {
  * @returns {AxiosInstance}
  */
 export default function gRequest(config) {
-
     const conf = extend(true, {}, defaultConfig, config);
     const axiosInstance = axios.create(conf);
-
     interceptors(axiosInstance);
 
     return axiosInstance;

@@ -1,4 +1,4 @@
-import { qRquest } from 'network/qRquest';
+import { gRequest } from 'network/gRequest';
 
 export const actions = {
     LOAD_DATA: "test.loadData",
