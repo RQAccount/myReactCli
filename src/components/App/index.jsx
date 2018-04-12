@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from 'components/Home';
 import { Spin } from 'antd';
 
@@ -8,11 +9,13 @@ class App extends React.Component {
     }
 
     render() {
-        const { hideLoading, showError } = this.props;
+        const { hideLoading } = this.props;
         return (
             <Router>
                 hideLoading ?
-                <Route component={Home}></Route>
+                <Switch>
+                    <Route path='/' component={Home}></Route>
+                </Switch>
                 :
                 <div style={{
                     width: '100%',

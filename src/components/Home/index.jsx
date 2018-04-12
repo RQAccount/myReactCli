@@ -1,9 +1,9 @@
 import React from 'react';
-import Test from 'components/Test';
+// import Test from 'components/Test';
 import style from './index.less';
 
 
-export default class Home extends React.Comment {
+export default class Home extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -11,8 +11,7 @@ export default class Home extends React.Comment {
     render() {
         return (
             <div style={style.container}>
-                <Test />
-                <Test />
+                hello world
             </div>
         );
     }

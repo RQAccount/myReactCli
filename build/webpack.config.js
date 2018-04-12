@@ -14,7 +14,7 @@ function src(dir) {
 }
 
 var theme = require(resolve('package.json')).theme;
-var isDev = (process.env.NODE_ENV || "").indexOf('dev') !== -1;
+var isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     mode: isDev ? 'development' : 'production',
@@ -23,8 +23,8 @@ module.exports = {
     },
     output: {
         path: resolve('dist'),
-        filename: isDev ? '' : 'static/js/[name].[chunkhash].js',
-        chunkFilename: isDev ? '' : 'static/js/[name].[chunkhash].js',
+        filename: isDev ? 'static/js/[name].js' : 'static/js/[name].[chunkhash].js',
+        chunkFilename: isDev ? 'static/js/[name].js' : 'static/js/[name].[chunkhash].js',
         publicPath: ''
     },
     module: {

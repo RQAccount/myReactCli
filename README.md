@@ -1,5 +1,5 @@
 # myReactCli
-react + redux + webpack + antd
+react + redux + less + webpack + axios + antd
 
 
 ## GETTING STARTED
