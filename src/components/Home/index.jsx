@@ -1,5 +1,5 @@
 import React from 'react';
-// import Test from 'components/Test';
+import Test from 'components/Test';
 import style from './index.less';
 
 
@@ -10,8 +10,8 @@ export default class Home extends React.Component {
 
     render() {
         return (
-            <div style={style.container}>
-                hello world
+            <div>
+                hello, world!
             </div>
         );
     }

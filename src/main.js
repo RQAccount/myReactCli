@@ -10,15 +10,14 @@ import Reducers from './reducers';
 import App from './components/App/index';
 
 window.store = InitStore(Reducers);
-let hideLoading = false;
-let showError = false;
+let hideLoading = true;
 
 render(
     <AppContainer>
         <Provider store={store}>
             <div>
                 <LocaleProvider locale={zhCN}>
-                    <App hideLoading={hideLoading} showError={showError}></App>
+                    <App hideLoading={hideLoading}></App>
                 </LocaleProvider>
             </div>
         </Provider>

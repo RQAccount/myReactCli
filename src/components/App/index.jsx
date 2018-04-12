@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from 'components/Home';
 import { Spin } from 'antd';
+import style from './index.less';
 
 class App extends React.Component {
     constructor(props) {
@@ -11,23 +12,25 @@ class App extends React.Component {
     render() {
         const { hideLoading } = this.props;
         return (
-            <Router>
-                hideLoading ?
-                <Switch>
-                    <Route path='/' component={Home}></Route>
-                </Switch>
-                :
-                <div style={{
-                    width: '100%',
-                    height: '100%',
-                    margin: 'auto',
-                    paddingTop: 50,
-                    textAlign: 'center'
-                }}>
-                    <Spin size='large'/>
-
-                </div>
-            </Router>
+            <div>
+                {
+                    hideLoading ?
+                    <Router>
+                        <Route path='/' component={Home}></Route>
+                    </Router>
+                    :
+                    <div style={{
+                        width: '100%',
+                        height: '100%',
+                        margin: 'auto',
+                        paddingTop: 50,
+                        textAlign: 'center',
+                    }}
+                    >
+                        <Spin size='large'/>
+                    </div>
+                }
+            </div>
         );
     }
 }
