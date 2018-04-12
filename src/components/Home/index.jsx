@@ -1,6 +1,6 @@
 import React from 'react';
-// import Test from 'components/Test';
-// import style from './index.less';
+import Test from 'components/Test';
+import styles from './index.less';
 
 
 export default class Home extends React.Component {
@@ -10,8 +10,9 @@ export default class Home extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className={styles.container}>
                 hello, world!
+                <Test></Test>
             </div>
         );
     }

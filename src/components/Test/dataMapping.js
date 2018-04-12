@@ -4,7 +4,7 @@ import { loadData, changeMessage } from 'actions/test';
 export default {
     mapStateToProps: state => ({
         list: state.test.list,
-        xxx: state.test.xxx,
+        massage: state.test.massage,
     }),
     mapDispatchToProps: dispatch => ({
         loadData: bindActionCreators(loadData, dispatch),

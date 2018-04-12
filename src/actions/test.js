@@ -1,4 +1,4 @@
-import { gRequest } from 'network/gRequest';
+import gRequest from 'network/gRequest';
 
 export const actions = {
     LOAD_DATA: "test.loadData",

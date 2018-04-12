@@ -1,6 +1,7 @@
 module.exports = {
     code: 0,
     data: {
-        list: ['你好', 'hello', 'hi']
+        list: ['你好', 'hello', 'hi'],
+        massage: 'change data'
     },
 };
